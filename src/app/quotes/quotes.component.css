@@ -1,0 +1,36 @@
+h1{
+    color:black;
+    font-size: 66px;
+    text-align: center;
+}
+h2{
+    color:blue;
+    text-align: center;
+    font-size: 45px;
+}
+.card{
+    color:black
+}
+.container-fluid{
+    text-align: center;
+}
+#sam{
+    background-color: black;
+    font-size: 46px;
+    color: white;
+}
+button{
+    width: 300px;
+}
+.ton{
+    margin-left: 100px;
+}
+#foot{
+    background-color: grey;
+}
+.card{
+    background-color: khaki;
+}
+/* #hank{
+    font-size: 20px;
+} */
