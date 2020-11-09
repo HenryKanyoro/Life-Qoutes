@@ -1,0 +1,43 @@
+<div class="container-fluid">
+  <div class="card">
+    <h1><b>Life Quotes</b></h1>
+    <br>
+    <br>
+    <h2>Welcome To Life Quotes</h2>
+    <br>
+  </div>
+
+  <div class="row" >
+   <div class="container-fluid">
+    <div id="sam"class="card" *ngFor='let quote of quotes; let i = index'>
+      <h3 id="text"class="card-title">{{  quote.id}} {{quote.author}}</h3>
+      <p class="card-text">{{quote.user}}</p>
+      <p id="text"class="card-text">{{quote.description}}</p>
+      <p id="text"class="card-text">{{quote.day}}</p>
+
+    <div class="ton">
+      <button class="btn btn-primary"(click)='upvote(i)'>Like {{quote.upvote}}</button>
+      <button class="btn btn-danger"(click)='downvote(i)'>Dislike{{quote.downvote}} </button>
+      <button class="btn btn-secondary"(click)='deleteQuote($event,i)' id="hank">Delete</button><br>
+    </div>
+    </div>
+    </div>
+  </div>
+<div id="foot"class="container-fluid">
+  <div>
+  <app-quotes-form (addQuote)="addNewQuote($event)"></app-quotes-form>
+  </div> 
+ <div>
+  <h3 class="card-title">{{author}}</h3>
+  <p class="card-text">{{description}}</p>
+  <p class="card-text">{{user}}</p>
+  <p class="card-text">{{day}}</p>
+  <button class="btn btn-primary">Like {{fabQuote}}</button>
+  <button class="btn btn-danger">Dislike {{worstQuote}} </button>
+ </div>
+
+ <button class="btn btn-danger" (click)='fabquote()'>BEST QUOTE </button>
+</div> 
+<br>
+
+
