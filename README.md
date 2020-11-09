@@ -1,6 +1,10 @@
 # LifeQuotes
+* LifeQuotes is a Website that provides the user with some encouragement quotes .
+* The Website also allows the users to post some quotes and share them to others .
+This project was generated with [Angular CLI](https://github.com/HenryKanyoro/Life-Qoutes) version 10.2.0.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
+## Author
+* Henry Kanyoro
 
 ## Development server
 
